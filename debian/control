@@ -1,0 +1,12 @@
+Source: ros-rolling-warehouse-ros
+Section: misc
+Priority: optional
+Maintainer: MoveIt! Release Team <moveit_releasers@googlegroups.com>
+Build-Depends: debhelper (>= 9.0.0), libboost-all-dev, ros-rolling-ament-cmake, ros-rolling-geometry-msgs, ros-rolling-pluginlib (>= 1.11.2), ros-rolling-rclcpp, ros-rolling-std-msgs, ros-rolling-tf2, ros-rolling-tf2-geometry-msgs, ros-rolling-tf2-ros, ros-rolling-ros-workspace
+Homepage: http://ros.org/wiki/warehouse_ros
+Standards-Version: 3.9.2
+
+Package: ros-rolling-warehouse-ros
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libboost-all-dev, ros-rolling-geometry-msgs, ros-rolling-pluginlib (>= 1.11.2), ros-rolling-rclcpp, ros-rolling-std-msgs, ros-rolling-tf2, ros-rolling-tf2-geometry-msgs, ros-rolling-tf2-ros, ros-rolling-ros-workspace
+Description: Persistent storage of ROS messages
