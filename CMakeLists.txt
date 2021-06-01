@@ -18,7 +18,7 @@ find_package(tf2 REQUIRED)
 find_package(tf2_ros REQUIRED)
 find_package(tf2_geometry_msgs REQUIRED)
 find_package(Boost REQUIRED COMPONENTS system filesystem thread)
-find_package(OpenSSL)
+find_package(OpenSSL REQUIRED)
 
 include_directories(
   include
@@ -84,5 +84,10 @@ install(
   DESTINATION include
   FILES_MATCHING PATTERN "*.h" PATTERN "*.hpp"
 )
+
+if(BUILD_TESTING)
+  find_package(ament_lint_auto REQUIRED)
+  ament_lint_auto_find_test_dependencies()
+endif()
 
 ament_package()
