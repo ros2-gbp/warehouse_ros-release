@@ -1,3 +1,26 @@
+## warehouse_ros (rolling) - 2.0.3-1
+
+The packages in the `warehouse_ros` repository were released into the `rolling` distro by running `/usr/bin/bloom-release --rosdistro rolling warehouse_ros` on `Wed, 30 Jun 2021 07:38:31 -0000`
+
+The `warehouse_ros` package was released.
+
+Version of package(s) in repository `warehouse_ros`:
+
+- upstream repository: https://github.com/ros-planning/warehouse_ros.git
+- release repository: https://github.com/moveit/warehouse_ros-release.git
+- rosdistro version: `2.0.2-1`
+- old version: `2.0.2-1`
+- new version: `2.0.3-1`
+
+Versions of tools used:
+
+- bloom version: `0.10.7`
+- catkin_pkg version: `0.4.23`
+- rosdep version: `0.21.0`
+- rosdistro version: `0.8.3`
+- vcstools version: `0.1.42`
+
+
 ## warehouse_ros (galactic) - 2.0.3-1
 
 The packages in the `warehouse_ros` repository were released into the `galactic` distro by running `/usr/bin/bloom-release --rosdistro galactic warehouse_ros` on `Wed, 30 Jun 2021 07:35:53 -0000`
