@@ -1,0 +1,12 @@
+Source: ros-foxy-warehouse-ros
+Section: misc
+Priority: optional
+Maintainer: MoveIt Release Team <moveit_releasers@googlegroups.com>
+Build-Depends: debhelper (>= 9.0.0), libboost-all-dev, libssl-dev, ros-foxy-ament-cmake, ros-foxy-ament-cmake-copyright, ros-foxy-ament-lint-auto, ros-foxy-geometry-msgs, ros-foxy-pluginlib (>= 1.11.2), ros-foxy-rclcpp, ros-foxy-std-msgs, ros-foxy-tf2, ros-foxy-tf2-geometry-msgs, ros-foxy-tf2-ros, ros-foxy-ros-workspace
+Homepage: http://ros.org/wiki/warehouse_ros
+Standards-Version: 3.9.2
+
+Package: ros-foxy-warehouse-ros
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libboost-all-dev, libssl-dev, ros-foxy-geometry-msgs, ros-foxy-pluginlib (>= 1.11.2), ros-foxy-rclcpp, ros-foxy-std-msgs, ros-foxy-tf2, ros-foxy-tf2-geometry-msgs, ros-foxy-tf2-ros, ros-foxy-ros-workspace
+Description: Persistent storage of ROS messages
