@@ -118,9 +118,9 @@ tracks:
       :{release_inc} --os-name fedora
     - git-bloom-generate -y rosrpm --prefix release/:{ros_distro} :{ros_distro} -i
       :{release_inc} --os-name rhel
-    devel_branch: null
+    devel_branch: ros2
     last_version: 2.0.4
-    name: upstream_foxy
+    name: upstream
     patches: null
     release_inc: '5'
     release_repo_url: null
@@ -128,7 +128,7 @@ tracks:
     ros_distro: jazzy
     vcs_type: git
     vcs_uri: https://github.com/ros-planning/warehouse_ros.git
-    version: :{ask}
+    version: :{auto}
   rolling:
     actions:
     - bloom-export-upstream :{vcs_local_uri} :{vcs_type} --tag :{release_tag} --display-uri
