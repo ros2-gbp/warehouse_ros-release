@@ -31,7 +31,6 @@
 #ifndef WAREHOUSE_ROS_DATABASE_LOADER_
 #define WAREHOUSE_ROS_DATABASE_LOADER_
 
-#include <boost/scoped_ptr.hpp>
 #include <warehouse_ros/database_connection.h>
 #include <pluginlib/class_loader.hpp>
 
@@ -76,12 +75,9 @@ class DatabaseLoader
 public:
   /// \brief Takes a warehouse_ros DatabaseConnection.
   /// The DatabaseConnection is expected to have already been initialized.
+  DatabaseLoader(const rclcpp::node_interfaces::NodeParametersInterface::SharedPtr& node_parameters);
   DatabaseLoader(const rclcpp::Node::SharedPtr& node);
-
-  ~DatabaseLoader();
-
-  /// \brief Initialize the DatabaseLoader
-  void initialize();
+  ~DatabaseLoader(){};
 
   /** \brief Load a database connection using pluginlib
    Looks for ROS params specifying which plugin/host/port to use. NodeHandle::searchParam()
@@ -89,8 +85,8 @@ public:
   typename DatabaseConnection::Ptr loadDatabase();
 
 private:
-  rclcpp::Node::SharedPtr node_;
-  boost::scoped_ptr<pluginlib::ClassLoader<warehouse_ros::DatabaseConnection> > db_plugin_loader_;
+  rclcpp::node_interfaces::NodeParametersInterface::SharedPtr node_parameters_;
+  std::unique_ptr<pluginlib::ClassLoader<warehouse_ros::DatabaseConnection> > db_plugin_loader_;
 };
 }  // namespace warehouse_ros
 
