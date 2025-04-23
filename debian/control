@@ -1,0 +1,12 @@
+Source: ros-kilted-warehouse-ros
+Section: misc
+Priority: optional
+Maintainer: MoveIt Release Team <moveit_releasers@googlegroups.com>
+Build-Depends: debhelper (>= 9.0.0), libboost-all-dev, libssl-dev, ros-kilted-ament-cmake, ros-kilted-ament-cmake-copyright <!nocheck>, ros-kilted-ament-lint-auto <!nocheck>, ros-kilted-geometry-msgs, ros-kilted-pluginlib (>= 1.11.2), ros-kilted-rclcpp, ros-kilted-std-msgs, ros-kilted-tf2, ros-kilted-tf2-geometry-msgs, ros-kilted-tf2-ros, ros-kilted-ros-workspace
+Homepage: http://ros.org/wiki/warehouse_ros
+Standards-Version: 3.9.2
+
+Package: ros-kilted-warehouse-ros
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libboost-all-dev, libssl-dev, ros-kilted-geometry-msgs, ros-kilted-pluginlib (>= 1.11.2), ros-kilted-rclcpp, ros-kilted-std-msgs, ros-kilted-tf2, ros-kilted-tf2-geometry-msgs, ros-kilted-tf2-ros, ros-kilted-ros-workspace
+Description: Persistent storage of ROS messages
