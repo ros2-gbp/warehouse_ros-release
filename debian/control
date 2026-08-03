@@ -1,0 +1,12 @@
+Source: ros-lyrical-warehouse-ros
+Section: misc
+Priority: optional
+Maintainer: "MoveIt Release Team" <moveit_releasers@googlegroups.com>
+Build-Depends: debhelper (>= 9.0.0), libboost-all-dev, libssl-dev, ros-lyrical-ament-cmake, ros-lyrical-ament-cmake-copyright <!nocheck>, ros-lyrical-ament-lint-auto <!nocheck>, ros-lyrical-geometry-msgs, ros-lyrical-pluginlib (>= 1.11.2), ros-lyrical-rclcpp, ros-lyrical-std-msgs, ros-lyrical-tf2, ros-lyrical-tf2-geometry-msgs, ros-lyrical-tf2-ros, ros-lyrical-ros-workspace
+Homepage: http://ros.org/wiki/warehouse_ros
+Standards-Version: 3.9.2
+
+Package: ros-lyrical-warehouse-ros
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libboost-all-dev, libssl-dev, ros-lyrical-geometry-msgs, ros-lyrical-pluginlib (>= 1.11.2), ros-lyrical-rclcpp, ros-lyrical-std-msgs, ros-lyrical-tf2, ros-lyrical-tf2-geometry-msgs, ros-lyrical-tf2-ros, ros-lyrical-ros-workspace
+Description: Persistent storage of ROS messages
