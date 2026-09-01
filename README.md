@@ -1,3 +1,26 @@
+## warehouse_ros (lyrical) - 2.0.9-1
+
+The packages in the `warehouse_ros` repository were released into the `lyrical` distro by running `/usr/bin/bloom-release --ros-distro lyrical warehouse_ros` on `Tue, 01 Sep 2026 17:21:06 -0000`
+
+The `warehouse_ros` package was released.
+
+Version of package(s) in repository `warehouse_ros`:
+
+- upstream repository: https://github.com/ros-planning/warehouse_ros.git
+- release repository: https://github.com/ros2-gbp/warehouse_ros-release.git
+- rosdistro version: `2.0.8-1`
+- old version: `2.0.8-1`
+- new version: `2.0.9-1`
+
+Versions of tools used:
+
+- bloom version: `0.14.3`
+- catkin_pkg version: `1.1.0`
+- rosdep version: `0.26.0`
+- rosdistro version: `1.0.1`
+- vcstools version: `0.1.42`
+
+
 ## warehouse_ros (kilted) - 2.0.9-1
 
 The packages in the `warehouse_ros` repository were released into the `kilted` distro by running `/usr/bin/bloom-release --ros-distro kilted warehouse_ros` on `Tue, 01 Sep 2026 17:20:25 -0000`
